@@ -1,0 +1,133 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "5ftkjfUwI9A6xCQ1PwIAd5+qlo0=",
+			"path": "github.com/elazarl/go-bindata-assetfs",
+			"revision": "57eb5e1fc594ad4b0b1dbea7b286d299e0cb43c2",
+			"revisionTime": "2015-12-24T06:54:52+02:00"
+		},
+		{
+			"checksumSHA1": "/78vseA9Nzq4noxZuOebO+1UXRU=",
+			"path": "github.com/golang/protobuf/proto",
+			"revision": "68415e7123da32b07eab49c96d2c4d6158360e9b",
+			"revisionTime": "2015-12-07T15:07:14+11:00"
+		},
+		{
+			"checksumSHA1": "FD7618KySBZ/syr6sn2gyfwum1w=",
+			"path": "github.com/google/go-github/github",
+			"revision": "58e27d2951882f0b3101ba9d6e0c34a0a49350c6",
+			"revisionTime": "2016-03-04T15:27:34-08:00"
+		},
+		{
+			"checksumSHA1": "dz3Of7nwquNfShyXNkLSA36RrLo=",
+			"path": "github.com/google/go-querystring/query",
+			"revision": "6bb77fe6f42b85397288d4f6f67ac72f8f400ee7",
+			"revisionTime": "2016-02-17T19:51:18-05:00"
+		},
+		{
+			"checksumSHA1": "2S6/xFCVtdrttCEQnSO6ZhGHv3U=",
+			"path": "github.com/gorilla/context",
+			"revision": "1f3e8a46c5bb4c29971d9867ede6e198ca5eddce",
+			"revisionTime": "2014-05-22T15:03:43-07:00"
+		},
+		{
+			"checksumSHA1": "7P67mLoODa41eNHrdAMtDJl9Ebg=",
+			"path": "github.com/gorilla/securecookie",
+			"revision": "1b0c7f6e9ab3d7f500fd7d50c7ad835ff428139b",
+			"revisionTime": "2014-04-09T13:11:00+02:00"
+		},
+		{
+			"checksumSHA1": "KMeJ6HDeEnlyvaewS2nIi0QpwsY=",
+			"path": "github.com/gorilla/sessions",
+			"revision": "28f896870851935df0885fca3410114940d49e1b",
+			"revisionTime": "2014-05-16T12:41:36-07:00"
+		},
+		{
+			"checksumSHA1": "sUS4TeGD/YlfK+t9ETKKlV9kysQ=",
+			"path": "github.com/kelseyhightower/envconfig",
+			"revision": "cea086319492c3940683ea5e122aa5de70a33923",
+			"revisionTime": "2016-03-16T12:37:06-07:00"
+		},
+		{
+			"checksumSHA1": "4KcCyGRFquWUgZaljRgjPbk7i7o=",
+			"path": "github.com/spf13/cobra",
+			"revision": "c678ff029ee250b65714e518f4f5c5cb934955de",
+			"revisionTime": "2016-03-22T12:10:42-05:00"
+		},
+		{
+			"checksumSHA1": "MrBzoMkuXdrGKo09/ka+JCC2Mlk=",
+			"path": "github.com/spf13/pflag",
+			"revision": "7f60f83a2c81bc3c3c0d5297f61ddfa68da9d3b7",
+			"revisionTime": "2015-10-24T12:54:09+02:00"
+		},
+		{
+			"checksumSHA1": "hKZGpbFuCrkE4s1vxubKK1aFlfI=",
+			"path": "golang.org/x/net/context",
+			"revision": "c95266fa704a83c2716406ae957772a273e1380d",
+			"revisionTime": "2015-10-29T12:35:12-07:00"
+		},
+		{
+			"checksumSHA1": "mktBVED98G2vv+OKcSgtnFVZC1Y=",
+			"path": "golang.org/x/oauth2",
+			"revision": "045497edb6234273d67dbc25da3f2ddbc4c4cacf",
+			"revisionTime": "2016-03-04T15:22:30-06:00"
+		},
+		{
+			"checksumSHA1": "Yokz/Wl4zeuOZG2ev8LuaLtMotE=",
+			"path": "golang.org/x/oauth2/github",
+			"revision": "045497edb6234273d67dbc25da3f2ddbc4c4cacf",
+			"revisionTime": "2016-03-04T15:22:30-06:00"
+		},
+		{
+			"checksumSHA1": "2/1PJ6nxegIPdmFoqugDSlpjEfQ=",
+			"path": "golang.org/x/oauth2/internal",
+			"revision": "045497edb6234273d67dbc25da3f2ddbc4c4cacf",
+			"revisionTime": "2016-03-04T15:22:30-06:00"
+		},
+		{
+			"checksumSHA1": "bhflwf6IlRqvP1rLcKm8meCcq4s=",
+			"path": "google.golang.org/appengine/internal",
+			"revision": "7bed6a18ea6f00deda4ea0b2797f715c7c555a6c",
+			"revisionTime": "2015-12-09T13:39:06+11:00"
+		},
+		{
+			"checksumSHA1": "TsNO8P0xUlLNyh3Ic/tzSp/fDWM=",
+			"path": "google.golang.org/appengine/internal/base",
+			"revision": "7bed6a18ea6f00deda4ea0b2797f715c7c555a6c",
+			"revisionTime": "2015-12-09T13:39:06+11:00"
+		},
+		{
+			"checksumSHA1": "5QsV5oLGSfKZqTCVXP6NRz5T4Tw=",
+			"path": "google.golang.org/appengine/internal/datastore",
+			"revision": "7bed6a18ea6f00deda4ea0b2797f715c7c555a6c",
+			"revisionTime": "2015-12-09T13:39:06+11:00"
+		},
+		{
+			"checksumSHA1": "Gep2T9zmVYV8qZfK2gu3zrmG6QE=",
+			"path": "google.golang.org/appengine/internal/log",
+			"revision": "7bed6a18ea6f00deda4ea0b2797f715c7c555a6c",
+			"revisionTime": "2015-12-09T13:39:06+11:00"
+		},
+		{
+			"checksumSHA1": "a1XY7rz3BieOVqVI2Et6rKiwQCk=",
+			"path": "google.golang.org/appengine/internal/remote_api",
+			"revision": "7bed6a18ea6f00deda4ea0b2797f715c7c555a6c",
+			"revisionTime": "2015-12-09T13:39:06+11:00"
+		},
+		{
+			"checksumSHA1": "QtAbHtHmDzcf6vOV9eqlCpKgjiw=",
+			"path": "google.golang.org/appengine/internal/urlfetch",
+			"revision": "7bed6a18ea6f00deda4ea0b2797f715c7c555a6c",
+			"revisionTime": "2015-12-09T13:39:06+11:00"
+		},
+		{
+			"checksumSHA1": "akOV9pYnCbcPA8wJUutSQVibdyg=",
+			"path": "google.golang.org/appengine/urlfetch",
+			"revision": "7bed6a18ea6f00deda4ea0b2797f715c7c555a6c",
+			"revisionTime": "2015-12-09T13:39:06+11:00"
+		}
+	],
+	"rootPath": "starz"
+}
