@@ -103,7 +103,11 @@ func (s *Server) gitHubCallback(w http.ResponseWriter, r *http.Request) {
 		http.Redirect(w, r, "/", http.StatusTemporaryRedirect)
 		return
 	}
-	session, _ := store.Get(r, "creds")
+	session, err := store.Get(r, "creds")
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
 	session.Values["authenticated"] = true
 	session.Values["uname"] = user.Login
 	if err := session.Save(r, w); err != nil {
@@ -114,7 +118,11 @@ func (s *Server) gitHubCallback(w http.ResponseWriter, r *http.Request) {
 
 func (s *Server) list(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
-	session, _ := store.Get(r, "creds")
+	session, err := store.Get(r, "creds")
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
 	if loggedIn := session.Values["authenticated"]; loggedIn != true {
 		http.Redirect(w, r, "/", http.StatusTemporaryRedirect)
 		return
@@ -172,7 +180,11 @@ func (s *Server) auth(w http.ResponseWriter, r *http.Request) {
 		Auth: false,
 	}
 	w.Header().Set("Content-Type", "application/json")
-	session, _ := store.Get(r, "creds")
+	session, err := store.Get(r, "creds")
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
 	if loggedIn := session.Values["authenticated"]; loggedIn == true {
 		output.Auth = true
 		json.NewEncoder(w).Encode(output)
@@ -183,7 +195,11 @@ func (s *Server) auth(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *Server) logout(w http.ResponseWriter, req *http.Request) {
-	session, _ := store.Get(req, "creds")
+	session, err := store.Get(req, "creds")
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
 	delete(session.Values, "authenticated")
 	delete(session.Values, "uname")
 	session.Save(req, w)
@@ -205,7 +221,11 @@ func (s *Server) serverInfo(w http.ResponseWriter, req *http.Request) {
 }
 
 func (s *Server) plist(w http.ResponseWriter, r *http.Request) {
-	session, _ := store.Get(r, "creds")
+	session, err := store.Get(r, "creds")
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
 	if loggedIn := session.Values["authenticated"]; loggedIn != true {
 		http.Redirect(w, r, "/", http.StatusTemporaryRedirect)
 		return
